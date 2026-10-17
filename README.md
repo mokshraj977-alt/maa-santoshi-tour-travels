@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Maa Santoshi Tour & Travels
 
-## Getting Started
+A responsive client-presentation website for Maa Santoshi Tour & Travels in Bilaspur, Chhattisgarh. Built with Next.js App Router, TypeScript, Tailwind CSS, and Lucide icons.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). Run the production checks with:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Website features
 
-## Learn More
+- Responsive navigation and travel-service, sample-fleet, gallery, reviews, and contact sections.
+- A client-side trip enquiry form that validates input and opens a pre-filled WhatsApp message. It does not store or submit data to a backend and does not confirm a booking.
+- Click-to-call phone links, WhatsApp enquiry links, and Google Maps search/directions links.
+- A separate ambulance-enquiry section. Availability and hours are not confirmed; the website is not an emergency dispatch service.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Fleet images, categories, and passenger capacities are illustrative demo content, not a verified inventory. The displayed 5.0 rating and 40 reviews are identified as supplied listing information; review quotes and an Instagram profile were not provided. Demo photos are downloaded under the [Unsplash License](https://unsplash.com/license), bundled in `public/images/`, and served directly without remote image fetches or Next.js image optimization.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push this project to a Git provider such as GitHub.
+2. In [Vercel](https://vercel.com/new), import the repository and select the project root.
+3. Keep the detected Next.js framework and default build settings (`npm run build`); no environment variables or backend services are required.
+4. Select **Deploy**. Vercel will build and publish the site; subsequent pushes to the connected branch trigger deployments.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site uses no verified Google Business Profile URL or Instagram URL; the Maps button opens a search for the supplied business name and address.
